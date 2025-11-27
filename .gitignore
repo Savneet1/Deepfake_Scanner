@@ -4,3 +4,10 @@ __pycache__/
 data/
 extracted_frames/
 logs/training_history.json
+test/
+test/
+test_frames/
+scripts/4_extract_test_frames.py scripts/4_extract_test_frames.py
+scripts/4_extract_test_frames.py
+scripts/5_predict_test_frames.py
+scripts/__pycache__/

@@ -1,0 +1,14 @@
+Deepfake_Detection/
+├── data/
+│   ├── real/          # 35 real videos here
+│   └── fake/          # 35 fake videos here
+├── extracted_frames/
+│   ├── real/
+│   └── fake/
+├── scripts/
+│   ├── 1_extract_frames.py
+│   ├── 2_train_model.py
+│   └── 3_evaluate_model.py
+├── models/
+│   └── checkpoints/
+└── logs/

@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+data/
+extracted_frames/
+logs/training_history.json

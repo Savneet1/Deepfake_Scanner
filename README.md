@@ -1,4 +1,3 @@
-text
 # Deepfake Scanner
 
 Deepfake Scanner is a lightweight deepfake detection pipeline built for low‑resource machines (CPU, ~4 GB RAM). It uses a MobileNetV2‑based classifier trained on a small subset of the FaceForensics++ dataset to classify video frames as real or fake.
@@ -37,10 +36,8 @@ Folders like `data/`, `extracted_frames/`, `test/`, and `test_frames/` are creat
 
 **1. Clone the repository:**
 
-git clone https://github.com/Savneet1/Deepfake_Scanner.git
+```git clone https://github.com/Savneet1/Deepfake_Scanner.git```
 cd Deepfake_Scanner
-
-text
 
 **2. Create and activate a virtual environment (recommended):**
 

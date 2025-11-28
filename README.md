@@ -36,26 +36,29 @@ Folders like `data/`, `extracted_frames/`, `test/`, and `test_frames/` are creat
 
 **1. Clone the repository:**
 
-```git clone https://github.com/Savneet1/Deepfake_Scanner.git```
+```
+git clone https://github.com/Savneet1/Deepfake_Scanner.git
+```
+
 cd Deepfake_Scanner
 
 **2. Create and activate a virtual environment (recommended):**
 
+```
 python3 -m venv venv
 source venv/bin/activate
-
-text
+```
 
 On Windows:
+```
 venv\Scripts\activate
-
-text
+```
 
 **3. Install Python dependencies:**
 
+```
 pip install -r requirements.txt
-
-text
+```
 
 **4. Prepare the dataset:**
 
@@ -64,31 +67,28 @@ Download FaceForensics / FaceForensics++ following the official instructions. Pl
 data/real/
 data/fake/
 
-text
-
 ## How to use
 
 ### 1. Extract frames
 
+```
 python3 scripts/1_extract_frames.py
-
-text
+```
 
 This reads videos from `data/real` and `data/fake` and writes frames into `extracted_frames/`.
 
 ### 2. Train the model
-
+```
 python3 scripts/train_model.py
-
-text
+```
 
 This trains a MobileNetV2 classifier on the extracted frames and saves checkpoints into `models/checkpoints/`, including `best_model.pt`.
 
 ### 3. Evaluate the model
 
+```
 python3 scripts/3_evaluate_model.py
-
-text
+```
 
 This loads `best_model.pt`, evaluates it on the validation split of `extracted_frames`, and writes metrics (e.g., accuracy, confusion matrix) into `logs/evaluation_results.json`.
 
@@ -96,9 +96,9 @@ This loads `best_model.pt`, evaluates it on the validation split of `extracted_f
 
 You can classify any folder of images (e.g., frames from your own videos):
 
+```
 python3 scripts/4_predict_folder.py --model_path models/checkpoints/best_model.pt --input_dir path/to/frames
-
-text
+```
 
 The script prints per‑image predictions (Real/Fake) and basic statistics for the folder.
 
